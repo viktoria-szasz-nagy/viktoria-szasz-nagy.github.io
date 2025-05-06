@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Gloock&display=swap');
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px); /* Start slightly below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+/* Apply the animation to the desired elements */
+body {
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 1.5s ease-out forwards; /* 1s duration, ease-out timing */
+}
+
+html {
+    font-family: "Darker Grotesque", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25, 25, 25);
+    color: #ffffff;
+    font-size: 24px;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 24px;
+}
+
+a {
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav > div {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+nav > div > h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: "Darker Grotesque", sans-serif;
+} */
+
+nav > a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 64px;
+    color: #191919;
+    background-color: #ffffff;
+    font-weight: 600;;
+    border-radius: 9999px;
+}
+
+nav > a:hover {
+    opacity: 0.8;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    text-align: left;
+    background-image: url(assets/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+}
+h1 {
+    font-family: "Gloock", serif;
+    text-transform: lowercase;
+    font-size: 4.5em;
+    line-height: 1;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Gloock", serif;
+    text-transform: lowercase;
+}
+
+#hero > p {
+    max-width: 450px;
+}
+
+.full-image {
+    width: 100%;
+    min-height: 740px;
+    margin: 0 auto;
+    background-image: url(./assets/victoria1.png);
+    background-size: cover;
+}
+
+.panel-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 16px;
+  }
+  
+  .panel-grid .panel {
+    grid-column: auto / span 2;
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background-image: linear-gradient(235deg, #242424 0%, #1a1a1a 100%);
+    border-radius: 16px;
+    border: solid 1px #333;
+    color: #fff;
+    border-radius: 8px;
+  }
+
+  .panel img {
+    width: 32px;
+    height: auto;
+  }
+
+  .panel h2, .panel p {
+    margin: 0;
+  }
+
+  .panel p {
+    color: #666;
+  }
+  
+  .panel-grid .panel:nth-child(1),
+  .panel-grid .panel:nth-child(2) {
+    grid-column: auto / span 3;
+  }
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    padding: 24px;
+    overflow: hidden;
+}
+
+#brands {
+    text-align: center;
+}
+
+#cv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+    padding: 24px;
+}
+
+#cv > .column > div {
+    color: #666;
+    padding: 12px 0;
+}
+
+strong {
+    font-weight: 600;
+}
+
+#cv > div > h2 {
+    color: #fff;
+}
+
+.logo-wrapper .brand-logo {
+    width: auto;
+    max-width: 60%;
+    max-height: 32px;
+    object-fit: contain;
+}
+
+#expertise {
+    text-align: center
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+}
+
+.expertise-grid .panel {
+    text-align: left;
+}
+
+.expertise-grid .panel > p {
+    color: #fff;
+}
+
+#works {
+    text-align: center;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    gap: 16px;
+    border-radius: 16px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.project-details {
+    padding: 24px;
+    max-width: 40%;
+}
+
+.work-item > img {
+    object-fit: contain;
+    max-height: 300px;
+}
+
+.work-logo {
+    max-height: 48px;
+    max-width: 120px;
+    width: auto;
+    height: auto;
+}
+
+.work-item h3 {
+    font-family: "Gloock", serif;
+    font-size: 1.1em;
+}
+
+.work-item p {
+    font-size: 0.85em;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.work-grid a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.work1 {
+    grid-row: span 3 / span 3;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.8) 100%),
+        url(./assets/works/spendo/spendo-hero-2.png),
+        linear-gradient(90deg, #00674C 0%, #003729 100%);
+}
+
+.work1:hover {
+    transition: 0.6s;
+    background-image: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.0) 100%),
+        url(./assets/works/spendo/spendo-hero-2.png),
+        linear-gradient(90deg, #00674C 0%, #003729 100%);
+}
+
+.work2 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.8) 100%),
+        url(./assets/works/aromax/aromax-hero.png),
+        linear-gradient(90deg, #000 0%, #000 100%);
+}
+
+.work2:hover {
+    transition: 0.6s;
+    background-image: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.0) 100%),
+        url(./assets/works/aromax/aromax-hero.png),
+        linear-gradient(90deg, #000 0%, #000 100%);
+}
+
+.work3 {
+    grid-row: span 3 / span 3;
+    grid-row-start: 4;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.8) 100%),
+        url(./assets/works/hbogo/hbogo-hero.png),
+        linear-gradient(90deg, #000 0%, #000 100%);
+}
+
+.work3:hover {
+    transition: 0.6s;
+    background-image: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.0) 100%),
+        url(./assets/works/hbogo/hbogo-hero.png),
+        linear-gradient(90deg, #000 0%, #000 100%);
+}
+
+.work4 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 5;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.8) 100%),
+        url(./assets/works/stabilo/stabilo-hero.png),
+        linear-gradient(180deg, rgba(255,0,0,0.5) 0%, rgba(25,25,25,1) 100%);
+}
+.work4:hover {
+    transition: 0.6s;
+    background-image: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.0) 100%),
+        url(./assets/works/stabilo/stabilo-hero.png),
+        linear-gradient(180deg, rgba(255,0,0,0.5) 0%, rgba(255,0,0,0.5) 100%);
+}
+
+
+
+.nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 64px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 9999px;
+    background-color: rgba(25,25,25,0.8);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    position: sticky;
+    bottom: 24px;
+}
+
+.nav .top-link {
+    font-family: "Gloock", serif;
+}
+
+.inside-nav {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.contact-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    background-image: linear-gradient(235deg, #242424 0%, #1a1a1a 100%);
+    border-radius: 16px;
+    border: solid 1px #333;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 64px;
+  }
+
+  #contact img {
+    max-width: 400px;
+    border-radius: 16px;
+  }
+
+  #contact h2 {
+    font-size: clamp(1.5rem, 4vw, 5rem);
+  }
+
+  #contact a {
+    font-family: "Gloock", serif;
+    text-transform: lowercase;}
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
