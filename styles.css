@@ -606,7 +606,7 @@ footer a {
 }
 
 .stabilo-content > div > h1::after {
-    content: " -"
+    content: " -";
 }
 .stabilo-content > p {
     margin: 0;
@@ -629,6 +629,114 @@ footer a {
     max-width:60%;
 }
 
+
+/* HBO GO */
+
+.hbogo-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 440px;
+}
+
+.hbogo-content > .work-logo {
+    align-self: flex-start;
+    max-height: 80px;
+    max-width: 160px;
+    width: auto;
+    height: auto;
+}
+
+.hbogo-content > div > h1, .hbogo-content > div > h2 {
+    font-family: "Gloock", serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.hbogo-content > div > h1::after {
+    content: " -";
+}
+
+.hbogo-content > div > h1 {
+    text-transform: uppercase;
+}
+
+.hbogo-content > p {
+    margin: 0;
+}
+
+#hbogo-about {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+/* Aromax */
+
+.aromax-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 440px;
+}
+
+.aromax-content > .work-logo {
+    align-self: flex-start;
+    max-height: 80px;
+    max-width: 160px;
+    width: auto;
+    height: auto;
+}
+
+.aromax-content > div > h1, .aromax-content > div > h2 {
+    font-family: "Gloock", serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.aromax-content > div > h1::after {
+    content: " -";
+}
+
+.aromax-content > div > h1 {
+    text-transform: titlecase;
+}
+
+.aromax-content > p {
+    margin: 0;
+}
+
+#aromax-about {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+/* Gallery */
+
+.image-gallery {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    padding-right: 1000px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.image-gallery::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.image-gallery img {
+    max-width: 600px;
+    height:auto;
+    cursor: zoom-in;
+    margin-bottom: 80px;
+}
 
 @media (max-width: 768px) {
     section {
@@ -740,5 +848,14 @@ footer a {
         flex-direction: column;
         gap: 24px;
     }
+    
+    #hbogo-about {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    #aromax-about {
+        flex-direction: column;
+        align-items: center;
+    }
 }
