@@ -565,6 +565,70 @@ footer a {
     gap: 24px;
 }
 
+/* Stabilo page */
+
+#stabilo-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 40px;
+    background-size: contain !important;
+    background-position: right !important;
+    background-repeat: no-repeat !important;
+    background: 
+        linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(25,25,25,0.8) 100%),
+        url(./assets/works/stabilo/stabilo-hero.png),
+        linear-gradient(180deg, rgba(255,0,0,0.5) 0%, rgba(25,25,25,1) 100%);
+    margin: 120px auto;
+    padding: 64px 96px 128px 96px;
+}
+
+.stabilo-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 440px;
+}
+
+.stabilo-content > .work-logo {
+    align-self: flex-start;
+    max-height: 80px;
+    max-width: 160px;
+    width: auto;
+    height: auto;
+}
+
+.stabilo-content > div > h1, .stabilo-content > div > h2 {
+    font-family: "Gloock", serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.stabilo-content > div > h1::after {
+    content: " -"
+}
+.stabilo-content > p {
+    margin: 0;
+}
+
+.stabilo-about {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.stabilo-mockup {
+    text-align: center;
+}
+
+.stabilo-mockup img {
+    max-width:60%;
+}
+
 
 @media (max-width: 768px) {
     section {
