@@ -72,12 +72,14 @@ nav > a {
     color: inherit;
     display: flex;
     align-items: center;
-    min-height: 48px;
+    max-height: 36px;
+    text-wrap: none;
     padding: 8px 24px;
     color: #191919;
     background-color: #ffffff;
     font-weight: 600;;
-    border-radius: 9999px;
+    border-radius: 8px;
+    text-box: trim-start text;
 }
 
 nav > a:hover {
@@ -848,7 +850,7 @@ footer a {
         flex-direction: column;
         gap: 24px;
     }
-    
+
     #hbogo-about {
         flex-direction: column;
         align-items: center;
