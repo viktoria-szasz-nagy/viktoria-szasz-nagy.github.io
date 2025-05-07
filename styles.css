@@ -24,7 +24,7 @@ html {
     background-color: rgb(25, 25, 25);
     color: #ffffff;
     font-size: 24px;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 section {
